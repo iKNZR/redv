@@ -1,0 +1,10 @@
+.codqr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, var(--white), var(--light-orange));
+}
+
+.codqr img {
+    width: 100%;
+}
