@@ -6,6 +6,10 @@
   --light-grey: #868686;
   --white: #ffffff;
 
+  --white-r: 255;
+  --white-g: 255;
+  --white-b: 255;
+
   box-sizing: border-box;
 }
 
