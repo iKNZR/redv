@@ -1,84 +1,145 @@
-.hero{
+.hero {
     height: calc(100dvh - 4.5rem);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.left, .right{
+.left,
+.right {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.character{
+.character {
     width: 27rem;
 }
 
-.name{
+.name {
     width: 20rem;
 }
 
 @media (max-width: 2560px) {
-    .character{
+    .character {
         width: 35rem;
     }
-    .name{
+
+    .name {
         width: 28rem;
     }
 }
 
 @media (max-width: 1920px) {
-    .character{
+    .character {
         width: 27rem;
     }
-    .name{
+
+    .name {
         width: 20rem;
     }
 }
-@media (max-width: 1440px) {
-    .character{
+
+@media (max-width: 1600px){
+    .character {
         width: 25rem;
     }
-    .name{
+
+    .name {
         width: 18rem;
+    }
+
+}
+
+@media (max-width: 1440px) {
+    .character {
+        width: 25rem;
+    }
+
+    .name {
+        width: 18rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .character {
+        width: 20rem;
+    }
+
+    .name {
+        width: 13rem;
     }
 }
 
 @media (max-width: 1024px) {
-    .hero{
+    .hero {
         height: calc(90dvh - 4.5rem);
     }
-    .character{
+
+    .character {
         width: 18rem;
     }
-    .name{
+
+    .name {
         width: 12rem;
     }
 }
 
+@media (max-width: 950px) {
+    .hero {
+        height: calc(80dvh - 4rem);
+    }
+
+    .character {
+        width: 17rem;
+    }
+
+    .name {
+        width: 10rem;
+    }
+
+}
+
 
 @media (max-width: 768px) {
-    .hero{
+    .hero {
         height: calc(70dvh - 3.5rem);
     }
-    .character{
+
+    .character {
         width: 15rem;
     }
-    .name{
+
+    .name {
         width: 7rem;
     }
 }
 
+@media (max-width: 650px) {
+    .hero {
+        height: calc(70dvh - 3rem);
+    }
+
+    .character {
+        width: 13rem;
+    }
+
+    .name {
+        width: 6rem;
+    }
+}
+
 @media (max-width: 425px) {
-    .hero{
+    .hero {
         height: calc(70dvh - 3rem);
         flex-direction: column;
     }
-    .character{
+
+    .character {
         width: 10rem;
     }
-    .name{
+
+    .name {
         width: 8rem;
     }
 }
