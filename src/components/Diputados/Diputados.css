@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 5rem;
+    width: 100%;
 }
 
 .diputados h1 {
@@ -60,7 +61,7 @@
 }
 
 @media (max-width: 1280px) {
- 
+
     .diputados img {
         width: 12rem;
         height: 12rem;
@@ -79,14 +80,20 @@
 }
 
 @media (max-width: 950px) {
-  
+
     .diputados img {
-        width: 9rem;
-        height: 9rem;
+        width: 8.5rem;
+        height: 8.5rem;
     }
 }
 
 @media (max-width: 768px) {
+    .diputados-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 0.5rem;
+    }
+
     .diputados h1 {
         font-size: 3rem;
     }
@@ -97,23 +104,31 @@
     }
 }
 
-@media (max-width: 650px){
-    .diputados-container {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        gap: 0.5rem;
-    }       
+@media (max-width: 600px) {
+    .diputados img {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+}
 
+@media (max-width: 550px) {
+    .diputados-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        justify-items: stretch;
+        align-items: stretch
+    }
+
+    .diputados img {
+        width: 10rem;
+        height: 10rem;
+    }
 }
 
 @media (max-width: 425px) {
     .diputados h1 {
         font-size: 2.5rem;
-    }
-
-    .diputados img {
-        width: 6rem;
-        height: 6rem;
     }
 }
 
@@ -128,15 +143,8 @@
     }
 }
 
-@media (max-width: 320px) {
-    .diputados-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        justify-items: stretch;
-        align-items: stretch
-    }
-    
+@media (max-width: 320px) {    
+
     .diputados h1 {
         font-size: 2.5rem;
     }
@@ -146,5 +154,3 @@
         height: 7rem;
     }
 }
-
-

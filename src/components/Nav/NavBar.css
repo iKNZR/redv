@@ -1,14 +1,16 @@
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
+    position: relative;
     padding: 1rem 1rem;
     height: 4.5rem;
     background-color: var(--white);
     box-shadow: 0 0.0625rem 0.8rem var(--light-grey);
     border-radius: 0 0 1rem 1rem;
+    z-index: 2;
 }
 
-.logo img{
+.logo img {
     height: 4rem;
 }
 
@@ -19,6 +21,7 @@
     gap: 5rem;
     margin-left: auto;
     align-items: center;
+    z-index: 1;
 }
 
 .nav-links a {
@@ -32,6 +35,71 @@
     color: var(--light-orange);
 }
 
+@keyframes slideDown {
+    0% {
+        transform: translateY(-50%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: none;
+    width: 2.5rem;
+    height: 0.2rem;
+    border-radius: 1rem;
+    margin: 0.6rem auto;
+    transition: all 0.3s ease-in-out;
+    background: var(--orange);
+}
+
+.menu .bar:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.menu .bar:nth-child(1) {
+    transform: translateY(0.8rem) rotate(45deg);
+}
+
+.menu .bar:nth-child(3) {
+    transform: translateY(-0.8rem) rotate(-45deg);
+}
+
+.hamb-links {
+    display: none;
+    flex-direction: column;
+    gap: 3rem;
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    background-color: var(--white);
+    animation: slideDown 0.3s ease-in-out;
+    width: 100%;
+    height: calc(100vh - 4.5rem);
+    padding: 3rem 0;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.hamb-links a {
+    font-size: clamp(1.5rem, 6vw, 4rem);
+    font-family: 'Gotham-Light-2';
+    font-weight: 700;
+    color: var(--orange);
+    text-align: center;
+}
+
+.hamb-links a:hover {
+    color: var(--light-orange);
+}
+
+
 @media (max-width: 1440px) {
     .nav-links {
         gap: 4rem;
@@ -40,9 +108,10 @@
 
 @media (max-width: 1280px) {
     .nav-links {
-        gap: 3.2rem;
+        gap: 3.1rem;
         margin-right: 3.5rem;
-    } 
+    }
+
     .nav-links a {
         font-size: 1.6rem;
     }
@@ -50,106 +119,137 @@
 
 @media (max-width: 1024px) {
     .nav-links {
-        gap: 2.8rem;
-        margin-right: 3.2rem;
+        gap: 2.5rem;
+        margin-right: 3rem;
     }
+
     .nav-links a {
         font-size: 1.5rem;
     }
 }
 
-@media (max-width: 950px){
-    .navbar{
+@media (max-width: 950px) {
+    .navbar {
         height: 4rem;
     }
-    .logo img{
-        height: 3rem;
+
+    .logo img {
+        height: 2.6rem;
     }
+
     .nav-links {
-        gap: 2rem;
-        margin-right: 3rem;
+        gap: 1.8rem;
+        margin-right: 1.5rem;
     }
+
     .nav-links a {
         font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 830px) {
+    .navbar {
+        height: 4rem;
+    }
+
+    .logo img {
+        height: 3rem;
+    }
+
+    .nav-links {
+        gap: 1.2rem;
+        margin-right: 0.8rem;
+    }
+
+    .nav-links a {
+        font-size: 1.4rem;
     }
 
 }
 
 @media (max-width: 768px) {
-    .navbar{
+    .navbar {
         height: 4rem;
+        justify-content: space-between;
     }
-    .logo img{
-        height: 3rem;
-    }
+
     .nav-links {
-        gap: 2rem;
+        display: none;
     }
-    .nav-links a {
-        font-size: 1.1rem;
+
+    .hamburger {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .hamb-links {
+        display: flex;
     }
 }
 
-@media (max-width: 700px){
-    .navbar{
+@media (max-width: 700px) {
+    .navbar {
         height: 3.5rem;
     }
-    .logo img{
+
+    .logo img {
         height: 2.5rem;
     }
-    .nav-links {
-        gap: 1.5rem;
-        margin-right: 2rem;
-    }
+
     .nav-links a {
         font-size: 1rem;
     }
 }
 
 @media (max-width: 425px) {
-    .navbar{
+    .navbar {
         height: 3.5rem;
     }
-    .logo img{
+
+    .logo img {
         height: 2rem;
     }
-    .nav-links {
-        gap: 0.3rem;
-        margin-right: 0.5rem;
+
+    .bar {
+        width: 2rem;
+        margin: 0.5rem auto;
+        height: 0.15rem;               
     }
-    .nav-links a {
-        font-size: 0.7rem;
+
+    .menu .bar:nth-child(1) {
+        transform: translateY(0.65rem) rotate(45deg);
     }
+    
+    .menu .bar:nth-child(3) {
+        transform: translateY(-0.65rem) rotate(-45deg);
+    }
+
 }
 
 @media (max-width: 375px) {
-    .navbar{
+    .navbar {
         height: 3.5rem;
     }
-    .logo img{
+
+    .logo img {
         height: 2rem;
     }
-    .nav-links {
-        gap: 0.3rem;
-        margin-right: 0.5rem;
-    }
-    .nav-links a {
-        font-size: 0.6rem;
-    }
+
 }
 
 @media (max-width: 320px) {
-    .navbar{
+    .navbar {
         height: 3.5rem;
-        padding: 0.5rem 0.3rem;
+        padding: 0.5rem 0.5rem;
     }
-    .logo img{
+
+    .logo img {
         height: 1.5rem;
     }
-    .nav-links {
-        margin-right: 0rem;
-    }
-    .nav-links a {
-        font-size: 0.6rem;
-    }
+
 }

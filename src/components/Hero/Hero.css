@@ -1,8 +1,10 @@
 .hero {
-    height: calc(100dvh - 4.5rem);
+    height: 90dvh;
+    width: 98%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .left,
@@ -13,61 +15,63 @@
 }
 
 .character {
-    width: 27rem;
+    width: 64%;
+    max-width: 27rem;
 }
 
 .name {
-    width: 20rem;
+    width: 36%;
+    max-width: 20rem;
 }
 
 @media (max-width: 2560px) {
     .character {
-        width: 35rem;
+        max-width: 35rem;
     }
 
     .name {
-        width: 28rem;
+        max-width: 28rem;
     }
 }
 
 @media (max-width: 1920px) {
     .character {
-        width: 27rem;
+        max-width: 27rem;
     }
 
     .name {
-        width: 20rem;
+        max-width: 20rem;
     }
 }
 
 @media (max-width: 1600px){
     .character {
-        width: 25rem;
+        max-width: 25rem;
     }
 
     .name {
-        width: 18rem;
+        max-width: 18rem;
     }
 
 }
 
 @media (max-width: 1440px) {
     .character {
-        width: 25rem;
+        max-width: 25rem;
     }
 
     .name {
-        width: 18rem;
+        max-width: 18rem;
     }
 }
 
 @media (max-width: 1280px) {
     .character {
-        width: 20rem;
+        max-width: 19rem;
     }
 
     .name {
-        width: 13rem;
+        max-width: 12rem;
     }
 }
 
@@ -77,11 +81,11 @@
     }
 
     .character {
-        width: 18rem;
+        max-width: 17rem;
     }
 
     .name {
-        width: 12rem;
+        max-width: 11.5rem;
     }
 }
 
@@ -91,11 +95,26 @@
     }
 
     .character {
-        width: 17rem;
+        max-width: 16.5rem;
     }
 
     .name {
-        width: 10rem;
+        max-width: 9.5rem;
+    }
+
+}
+
+@media (max-width: 850px){
+    .hero {
+        height: calc(75dvh - 3.5rem);
+    }
+
+    .character {
+        max-width: 16rem;
+    }
+
+    .name {
+        max-width: 9rem;
     }
 
 }
@@ -103,29 +122,32 @@
 
 @media (max-width: 768px) {
     .hero {
-        height: calc(70dvh - 3.5rem);
+        height: 70dvh;
+        width: 98%;
+        margin: auto;
     }
 
     .character {
-        width: 15rem;
+        width: 65%;
+        max-width: 15rem;
     }
 
     .name {
-        width: 7rem;
+        width: 35%;
+        max-width: 7rem;
     }
 }
 
-@media (max-width: 650px) {
-    .hero {
-        height: calc(70dvh - 3rem);
-    }
+
+
+@media (max-width: 650px) {   
 
     .character {
-        width: 13rem;
+        max-width: 13rem;
     }
 
     .name {
-        width: 6rem;
+        max-width: 6rem;
     }
 }
 
@@ -136,10 +158,12 @@
     }
 
     .character {
-        width: 10rem;
+        width: 60%;
+        max-width: 10rem;
     }
 
     .name {
-        width: 8rem;
+        width: 40%;
+        max-width: 8rem;
     }
 }
