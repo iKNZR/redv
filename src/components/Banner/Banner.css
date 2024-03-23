@@ -178,3 +178,18 @@
         font-size: 2rem;
     }
 }
+
+@media (max-width: 300px){
+    .banner h1 {
+        font-size: 2rem;
+    }
+    .text td{
+        font-size: 1.2rem;
+    }
+    .tiempo td{
+        font-size: 1.5rem;
+    }
+    .banner td{
+        padding: 0 0.1rem;
+    }
+}
