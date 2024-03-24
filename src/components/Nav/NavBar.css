@@ -26,7 +26,7 @@
 
 .nav-links a {
     color: var(--orange);
-    font-family: 'Gotham-Light-2';
+    font-family: 'Gotham-Light';
     font-size: 2rem;
     font-weight: 700;
 }
@@ -89,8 +89,8 @@
 
 .hamb-links a {
     font-size: clamp(1.5rem, 6vw, 4rem);
-    font-family: 'Gotham-Light-2';
-    font-weight: 700;
+    font-family: 'Gotham-Light';
+    font-weight: 800;
     color: var(--orange);
     text-align: center;
 }
