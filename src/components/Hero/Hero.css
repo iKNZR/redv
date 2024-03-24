@@ -174,3 +174,13 @@
         max-width: 8rem;
     }
 }
+
+@media (max-width:300px){
+    .character {
+        max-width: 8rem;
+    }
+
+    .name {
+        max-width: 5rem;
+    }
+}
