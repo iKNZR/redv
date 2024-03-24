@@ -5,15 +5,16 @@ import Banner from '../../components/Banner/Banner'
 import Diputados from '../../components/Diputados/Diputados'
 import Qr from '../../components/QR/Qr'
 import Footer from '../../components/Footer/Footer'
+import Button from '../../components/Button/Button'
 
 const HomePage = () => {
   return (
     <div>
         <Hero />
+        <Button text="CONÉCTATE A LA RED"/>
         <Banner endDate="2024-03-31" displayText="PARA LA CAMPAÑA A GOBERNADOR"/>
-        <Diputados />
-        <Banner endDate="2024-04-31" displayText="PROXIMAMENTE"/>
         <Qr />
+        <Banner endDate="2024-04-31" displayText="PROXIMAMENTE"/>
         <Footer />
     </div>
   )

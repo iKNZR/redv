@@ -1,0 +1,38 @@
+.buttn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.buttn button{
+    padding: 1.2rem 3rem;
+    margin: 3rem 0;
+    border: none;
+    background-color: var(--orange);
+    color: var(--white);
+    font-family: 'Gotham-Book-2';
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    cursor: pointer;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.8rem var(--light-grey);
+}
+
+.buttn button:hover{
+    background-color: var(--light-orange);
+}
+
+
+@media (max-width: 400px){
+    .buttn button{ 
+        padding: 1rem 2rem;
+        font-size: 1.2rem;     
+    }
+}
+
+@media (max-width: 300px){
+    .buttn button{ 
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;     
+    }
+}

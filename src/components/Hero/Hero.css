@@ -24,6 +24,13 @@
     max-width: 20rem;
 }
 
+.character:nth-child(1){
+    scale: 0.95;
+}
+.character:nth-child(2){
+    scale: 1.1;
+}
+
 @media (max-width: 2560px) {
     .character {
         max-width: 35rem;
