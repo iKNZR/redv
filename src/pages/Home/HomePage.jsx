@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <div>
         <Hero />
-        <Button text="CONÉCTATE A LA RED"/>
+        <Button text="CONECTA YA"/>
         <Banner endDate="2024-03-31" displayText="PARA LA CAMPAÑA A GOBERNADOR"/>
         <Qr />
         <Banner endDate="2024-04-31" displayText="PROXIMAMENTE"/>

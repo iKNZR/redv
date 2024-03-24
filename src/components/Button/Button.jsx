@@ -4,7 +4,9 @@ import './Button.css'
 const Button = ({text}) => {
   return (
     <div className='buttn'>
-      <button>{text}</button>
+      <a href='https://api.whatsapp.com/send?phone=5215586666977&text=hola' target='_blank'>
+        <button>{text}</button>
+      </a>
     </div>
   )
 }

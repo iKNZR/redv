@@ -17,7 +17,7 @@ const NavBar = () => {
         <a href="/">INICIO</a>
         <a href="/senadores">SENADORES</a>
         <a href="/diputados">DIPUTADOS</a>
-        <a href="/conecta">CONECTA YA!</a>
+        <a href="https://api.whatsapp.com/send?phone=5215586666977&text=hola" target="_blank">CONECTA YA!</a>
       </div>
       <div className={menu ? "menu" : "hamburger"} onClick={handleActive}>
         <span className="bar"></span>
@@ -29,7 +29,7 @@ const NavBar = () => {
           <a href="/">INICIO</a>
           <a href="/senadores">SENADORES</a>
           <a href="/diputados">DIPUTADOS</a>
-          <a href="/conecta">CONECTA YA!</a>
+          <a href="https://api.whatsapp.com/send?phone=5215586666977&text=hola" target="_blank">CONECTA YA!</a>
         </div>
       ) : <></>}
     </div>
