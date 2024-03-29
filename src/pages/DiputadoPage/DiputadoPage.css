@@ -1,0 +1,256 @@
+.diputado-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    animation: fadeInRight 0.8s ease-out;
+    /* background: radial-gradient(circle, var(--light-orange), white); */
+}
+
+.bigcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.7rem var(--light-grey);
+    background: white;
+    height: auto;
+}
+
+.bigcard img{
+    flex: 0 0 auto;
+    margin-right: 1.5rem;
+    width: 25rem;
+    object-fit: cover;
+}
+
+.cardcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardcontent h1 {
+    font-size: clamp(1rem, 3vw, 3rem);
+    font-family: 'Gotham-Black';
+    color: var(--dark-grey);
+}
+
+.cardcontent p {
+    font-size: clamp(0.8rem, 2vw, 2rem);
+    font-family: 'Gotham-Medium';
+    /* text-transform: uppercase; */
+    color: var(--dark-grey);
+}
+
+.cardcontent button {
+    padding: 0.725rem 1.3rem;
+    background-color: var(--orange);
+    color: white;
+    border: none;    
+    font-family: 'Gotham-Light';
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;   
+}
+
+.cardcontent button:hover {
+    background-color: var(--light-orange);
+}
+
+@media (max-width: 1600px) {
+ 
+
+}
+
+@media (max-width: 1440px) {
+
+    .diputado-page{
+        padding: 4rem;
+    }
+    .bigcard {
+        width: 90%;
+        margin: auto;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .bigcard img {
+        width: 45%;
+        height: auto;
+        margin: 1rem;
+    }
+
+    .cardcontent {
+        width: 50%;
+        height: 90%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+        margin: 0 1rem;
+    }
+
+    .cardcontent h1 {
+        text-align: center;
+    }
+ 
+}
+
+
+@media (max-width: 1024px) {
+    .diputado-page{
+        padding: 3rem;
+    }
+    .bigcard {
+        width: 95%;
+        margin: auto;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .bigcard img {
+        width: 45%;
+        height: auto;
+        margin: 1rem;
+    }
+
+    .cardcontent {
+        width: 50%;
+        height: 90%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+        margin: 0 1rem;
+    }
+
+    .cardcontent h1 {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 820px) {
+    .diputado-page{
+        padding: 2rem 0;
+    }
+    .bigcard {
+        width: 90%;
+        margin: auto;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+    .cardcontent button{
+        padding: 0.6rem 1.2rem;
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .diputado-page{
+        max-width: 100%;
+        padding: 2rem 0;
+    }
+    .bigcard {
+        width: 85%;
+        margin: auto;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bigcard img {
+        width: 80%;
+        margin: 1rem 0 0 0;
+    }
+
+    .cardcontent {
+        height: auto;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    .cardcontent h1 {
+        text-align: center;
+    }
+
+
+    .cardcontent button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .diputado-page{
+        max-width: 100%;
+        padding: 2rem 0;
+    }
+    .bigcard {
+        width: 85%;
+        margin: auto;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bigcard img {
+        width: 80%;
+        margin: 1rem 0 0 0;
+    }
+
+    .cardcontent {
+        height: auto;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    .cardcontent h1 {
+        text-align: center;
+    }
+
+
+    .cardcontent button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+  }
+
+
+
+@media (max-width: 300px) {    
+    .bigcard {
+        width: 90%;
+    }
+
+    .bigcard img {
+        width: 85%;
+    }
+
+    .cardcontent {
+        width: 95%;
+    }
+
+    .cardcontent h1 {
+        text-align: center;
+    }
+
+    .cardcontent button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}

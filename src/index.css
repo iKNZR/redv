@@ -23,145 +23,178 @@ a {
 
 @font-face {
   font-family: 'Compacta';
-  src: url('/public/fonts/compactad.ttf') format('opentype');
+  src: url('/fonts/compactad.ttf') format('opentype');
 }
 
 @font-face {
-  font-family: 'Compactadot_lightcompress.otf';
-  src: url('/public/fonts/compactadot_lightcompress.otf') format('opentype');
+  font-family: 'Compactadot_lightcompress';
+  src: url('/fonts/compactadot_lightcompress.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'CompactaDOT-Black';
-  src: url('/public/fonts/CompactaDOT-Blac.otf') format('opentype');
+  src: url('/fonts/CompactaDOT-Blac.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'CompactaDOT-Bold';
-  src: url('/public/fonts/CompactaDOT-Bold.otf') format('opentype');
+  src: url('/fonts/CompactaDOT-Bold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'CompactaDOT-Light';
-  src: url('/public/fonts/CompactaDOT-Ligh.otf') format('opentype');
+  src: url('/fonts/CompactaDOT-Ligh.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'CompactaDOT-LightComp';
-  src: url('/public/fonts/CompactaDOT-LighComp.otf') format('opentype');
+  src: url('/fonts/CompactaDOT-LighComp.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'CompactaDOT';
-  src: url('/public/fonts/CompactaDOT-Regu.otf') format('opentype');
+  src: url('/fonts/CompactaDOT-Regu.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Gotham-Black-2';
-  src: url('/public/fonts/Gotham-Black\ 2.otf') format('opentype');
+  src: url('/fonts/Gotham-Black\ 2.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Gotham-Black';
-  src: url('/public/fonts/Gotham-Black.otf') format('opentype');
+  src: url('/fonts/Gotham-Black.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Gotham-Bold-2';
-  src: url('/public/fonts/Gotham-Bold\ 2.otf') format('opentype');
+  src: url('/fonts/Gotham-Bold\ 2.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Gotham-Bold';
-  src: url('/public/fonts/Gotham-Bold.otf') format('opentype');
+  src: url('/fonts/Gotham-Bold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Gotham-Boldita-2';
-  src: url('/public/fonts/Gotham-BoldIta\ 2.otf') format('opentype');
+  src: url('/fonts/Gotham-BoldIta\ 2.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'Gotham-Book-2';
-  src: url('/public/fonts/Gotham-Book\ 2.otf') format('opentype');
+  font-family: 'Gotham-Book';
+  src: url('/fonts/Gotham-Book\ 2.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Gotham-Book-Ita-2';
-  src: url('/public/fonts/Gotham-BookIta\ 2.otf') format('opentype');
+  src: url('/fonts/Gotham-BookIta\ 2.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Gotham-Book-Italic';
-  src: url('/public/fonts/Gotham-BookItalic.otf') format('opentype');
+  src: url('/fonts/Gotham-BookItalic.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Gotham-Light-2';
-  src: url('/public/fonts/Gotham-Light\ 2.otf') format('opentype');
+  src: url('/fonts/Gotham-Light\ 2.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Gotham-Light';
-  src: url('/public/fonts/Gotham-Light.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Gotham-Medium-2';
-  src: url('/public/fonts/Gotham-Medium\ 2.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Gotham-Thin';
-  src: url('/public/fonts/Gotham-Thin.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Gotham-Thin-Italic';
-  src: url('/public/fonts/Gotham-ThinItalic.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Gotham-Ultra-2';
-  src: url('/public/fonts/Gotham-Ultra\ 2.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Gotham-Ultra-Italic';
-  src: url('/public/fonts/Gotham-UltraItalic.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Gotham-XLight';
-  src: url('/public/fonts/Gotham-XLight.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Gotham-XLight-Italic';
-  src: url('/public/fonts/Gotham-XLightItalic.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Gotham-Bold';
-  src: url('/public/fonts/Gotham-Bold.ttf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Gotham-BoldItalic';
-  src: url('/public/fonts/Gotham-BoldItalic.ttf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Gotham-Medium-1';
-  src: url('/public/fonts/Gotham-Medium_1.ttf') format('opentype');
+  src: url('/fonts/Gotham-Light.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Gotham-Medium';
-  src: url('/public/fonts/Gotham-Medium.ttf') format('opentype');
+  src: url('/fonts/Gotham-Medium-2.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham-Thin';
+  src: url('/fonts/Gotham-Thin.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham-Thin-Italic';
+  src: url('/fonts/Gotham-ThinItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham-Ultra-2';
+  src: url('/fonts/Gotham-Ultra\ 2.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham-Ultra-Italic';
+  src: url('/fonts/Gotham-UltraItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham-XLight';
+  src: url('/fonts/Gotham-XLight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham-XLight-Italic';
+  src: url('/fonts/Gotham-XLightItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url('/fonts/GothamBold.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham-BoldItalic';
+  src: url('/fonts/Gotham-BoldItalic.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham-Medium-1';
+  src: url('/fonts/Gotham-Medium_1.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham-Medium-2';
+  src: url('/fonts/Gotham-Medium.ttf') format('opentype');
 }
 
 @font-face {
   font-family: 'Gotham-Medium-Italic';
-  src: url('/public/fonts/Gotham-MediumItalic.ttf') format('opentype');
+  src: url('/fonts/Gotham-MediumItalic.ttf') format('opentype');
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

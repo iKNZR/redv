@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     background: radial-gradient(circle, var(--white), var(--light-orange));
+    animation: fadeInDown 0.5s ease-out backwards;
 }
 
 .codqr img {

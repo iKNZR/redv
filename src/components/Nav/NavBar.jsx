@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./NavBar.css";
-import logo from "../../../public/assets/Logo.png";
+import logo from "/assets/Logo.png";
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
@@ -14,10 +15,10 @@ const NavBar = () => {
         <img src={logo} alt="logo" />
       </div>
       <div className="nav-links">
-        <a href="/">INICIO</a>
-        <a href="/senadores">SENADORES</a>
-        <a href="/diputados">DIPUTADOS</a>
-        <a href="https://api.whatsapp.com/send?phone=5215586666977&text=hola" target="_blank">CONECTA YA!</a>
+        <Link to="/">INICIO</Link>
+        <Link to="/senadores">SENADORES</Link>
+        <Link to="/diputados">DIPUTADOS</Link>
+        <Link to="https://api.whatsapp.com/send?phone=5215586666977&text=hola" target="_blank">CONECTA YA!</Link>
       </div>
       <div className={menu ? "menu" : "hamburger"} onClick={handleActive}>
         <span className="bar"></span>
@@ -26,10 +27,10 @@ const NavBar = () => {
       </div>
       {menu ? (
         <div className="hamb-links">
-          <a href="/">INICIO</a>
-          <a href="/senadores">SENADORES</a>
-          <a href="/diputados">DIPUTADOS</a>
-          <a href="https://api.whatsapp.com/send?phone=5215586666977&text=hola" target="_blank">CONECTA YA!</a>
+          <Link to="/">INICIO</Link>
+          <Link to="/senadores">SENADORES</Link>
+          <Link to="/diputados">DIPUTADOS</Link>
+          <Link to="https://api.whatsapp.com/send?phone=5215586666977&text=hola" target="_blank">CONECTA YA!</Link>
         </div>
       ) : <></>}
     </div>

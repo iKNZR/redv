@@ -8,6 +8,7 @@
     box-shadow: 0 0.0625rem 0.8rem var(--light-grey);
     border-radius: 0 0 1rem 1rem;
     z-index: 2;
+    animation: fadeInDown 0.5s ease-out backwards;
 }
 
 .logo img {

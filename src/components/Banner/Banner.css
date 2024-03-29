@@ -7,10 +7,11 @@
     margin: auto;
     padding: 2rem 0;
     color: var(--white);
+    animation: fadeInRight 0.5s ease-out backwards;
 }
 
 .tiempo td{
-    font-family: 'Gotham-Bold-2';
+    font-family: 'Gotham-Bold';
     font-size: 6rem;
 }
 

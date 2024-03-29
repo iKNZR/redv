@@ -1,9 +1,9 @@
 import React from 'react'
 import './Hero.css'
-import angelica from '../../../public/assets/angelica1.png'
-import angelica_name from '../../../public/assets/Angelica_name.png'
-import dante from '../../../public/assets/Dante.png'
-import dante_name from '../../../public/assets/Dante_name.png'
+import angelica from '/assets/angelica1.png'
+import angelica_name from '/assets/Angelica_name.png'
+import dante from '/assets/Dante.png'
+import dante_name from '/assets/Dante_name.png'
 
 const Hero = () => {
   return (

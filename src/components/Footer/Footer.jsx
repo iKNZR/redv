@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import qr_footer from "/assets/qr_footer.png";
 import logo from "/assets/Logo.png";
@@ -12,10 +13,10 @@ const Footer = () => {
       <div className="right-sect">
         <h2>NOSOTROS</h2>
         <div className="foot-nav">
-          <a href="/">Inicio</a>
-          <a href="/senadores">Senadores</a>
-          <a href="/diputados">Diputados</a>
-          <a href="/conecta">Conecta Ya!</a>
+          <Link to="/">Inicio</Link>
+          <Link to="/senadores">Senadores</Link>
+          <Link to="/diputados">Diputados</Link>
+          <Link to="/conecta">Conecta Ya!</Link>
         </div>
         <img src={logo} alt="Logo" />
         <h3>@RedVeracruzEnMovimiento</h3>

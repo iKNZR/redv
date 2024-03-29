@@ -15,7 +15,6 @@ const HomePage = () => {
         <Banner endDate="2024-03-31" displayText="PARA LA CAMPAÑA A GOBERNADOR"/>
         <Qr />
         <Banner endDate="2024-04-31" displayText="PROXIMAMENTE"/>
-        <Footer />
     </div>
   )
 }
