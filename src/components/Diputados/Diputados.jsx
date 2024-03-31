@@ -30,7 +30,7 @@ const Diputados = () => {
   }, []);
 
   return (
-    <div className="diputados">
+    <div className="diputados" id="diputados">
       <h1>CONOCE A TUS DIPUTADOS</h1>
       <div className="diputados-container">
         {data ?
@@ -45,7 +45,7 @@ const Diputados = () => {
               <img src={row[1]} alt={`Diputado ${row[2]}`} />
               <div className={hoverStatus[row[0]] ? "desc" : "descn"}>
                 <p>{row[2]}</p>
-                <Link to={`/diputados/${row[0]}`}>
+                <Link to={`/diputados/${row[0]}`}  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   <button className="contactame">Conóceme</button>
                 </Link>
               </div>

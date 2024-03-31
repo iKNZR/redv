@@ -16,8 +16,7 @@ const NavBar = () => {
       </div>
       <div className="nav-links">
         <Link to="/">INICIO</Link>
-        <Link to="/senadores">SENADORES</Link>
-        <Link to="/diputados">DIPUTADOS</Link>
+        <a href="#diputados">DIPUTADOS</a>
         <Link to="https://api.whatsapp.com/send?phone=5215586666977&text=hola" target="_blank">CONECTA YA!</Link>
       </div>
       <div className={menu ? "menu" : "hamburger"} onClick={handleActive}>
@@ -27,10 +26,9 @@ const NavBar = () => {
       </div>
       {menu ? (
         <div className="hamb-links">
-          <Link to="/">INICIO</Link>
-          <Link to="/senadores">SENADORES</Link>
-          <Link to="/diputados">DIPUTADOS</Link>
-          <Link to="https://api.whatsapp.com/send?phone=5215586666977&text=hola" target="_blank">CONECTA YA!</Link>
+          <Link to="/"  onClick={handleActive}>INICIO</Link>
+          <a href="#diputados" onClick={handleActive}>DIPUTADOS</a>
+          <Link to="https://api.whatsapp.com/send?phone=5215586666977&text=hola" target="_blank"  onClick={handleActive}>CONECTA YA!</Link>
         </div>
       ) : <></>}
     </div>
