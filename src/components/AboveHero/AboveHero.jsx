@@ -1,6 +1,6 @@
 import React from 'react'
 import './AboveHero.css'
-import polo from '/assets/polocandidato.png'
+import polo from '/assets/polocandidatoo.png'
 import poster  from '/assets/posterpolo1.png'
 
 const AboveHero = () => {
