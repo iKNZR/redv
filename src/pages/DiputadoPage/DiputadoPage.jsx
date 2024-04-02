@@ -37,7 +37,7 @@ const DiputadoPage = () => {
                 <h1>{data.nombre}</h1>
                 <p>{data.descripcion}</p>
                 <Link to={data.link} target="_blank">
-                  <button>CONTÁCTAME</button>
+                  <button>CONTACTA YA</button>
                 </Link>
               </div>
             </div>
