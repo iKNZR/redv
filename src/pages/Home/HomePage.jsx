@@ -13,7 +13,7 @@ const HomePage = () => {
     <div className="homepage">
       <AboveHero />
       <Hero />
-      <Button text="CONECTA YA" />
+      <Button text="CONTÁCTANOS" />
       {/* <Banner endDate="2024-03-31" displayText="PARA LA CAMPAÑA A GOBERNADOR" /> */}
       <Diputados />
       <Banner endDate="2024-04-31" displayText="PROXIMAMENTE" />
