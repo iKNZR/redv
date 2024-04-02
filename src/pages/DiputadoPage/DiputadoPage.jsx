@@ -11,10 +11,10 @@ const DiputadoPage = () => {
   const getData = async () => {
     try {
       const response = await fetch(
-        "https://vercesheetstest-goj7o2r0b-iknzrs-projects.vercel.app/data"
+        "/data/data.json"
       );
       const data = await response.json();
-      if (data[idNumber][0] == idNumber) {
+      if (data[idNumber].id == idNumber) {
         setData(data[idNumber]);
       }
     } catch (error) {
@@ -32,12 +32,12 @@ const DiputadoPage = () => {
         <div className="contenido">
           {data ? (
             <div className="bigcard">
-              <img src={data[1]} alt="" />
+              <img src={data.foto} alt="" />
               <div className="cardcontent">
-                <h1>{data[2]}</h1>
-                <p>{data[4]}</p>
-                <Link to={data[3]} target="_blank">
-                  <button>CONTÁCTAME</button>
+                <h1>{data.nombre}</h1>
+                <p>{data.descripcion}</p>
+                <Link to={data.link} target="_blank">
+                  <button>CONTÁCTANOS</button>
                 </Link>
               </div>
             </div>

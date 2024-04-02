@@ -13,11 +13,10 @@ const Diputados = () => {
   const outHover = (i) => {
     setHoverStatus({ ...hoverStatus, [i]: false });
   };
+
   const fetchData = async () => {
     try {
-      const response = await fetch(
-        "https://vercesheetstest-goj7o2r0b-iknzrs-projects.vercel.app/data"
-      );
+      const response = await fetch('/data/data.json');
       const data = await response.json();
       setData(data);
     } catch (error) {
@@ -36,16 +35,16 @@ const Diputados = () => {
         {data ?
           data.map((row, _) => (
             <div
-              key={row[0]}
+              key={row.id}
               className="card"
-              style={{ animationDelay: `${row[0] * 0.3}s` }}
-              onMouseEnter={() => enterHover(row[0])}
-              onMouseLeave={() => outHover(row[0])}
+              style={{ animationDelay: `${row.id * 0.3}s` }}
+              onMouseEnter={() => enterHover(row.id)}D
+              onMouseLeave={() => outHover(row.id)}
             >
-              <img src={row[1]} alt={`Diputado ${row[2]}`} />
-              <div className={hoverStatus[row[0]] ? "desc" : "descn"}>
-                <p>{row[2]}</p>
-                <Link to={`/diputados/${row[0]}`}  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+              <img src={row.foto} alt={`Diputado ${row.foto}`} />
+              <div className={hoverStatus[row.id] ? "desc" : "descn"}>
+                <p>{row.nombre}</p>
+                <Link to={`/diputados/${row.id}`}  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   <button className="contactame">Conóceme</button>
                 </Link>
               </div>
