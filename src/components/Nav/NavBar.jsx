@@ -16,7 +16,7 @@ const NavBar = () => {
       </div>
       <div className="nav-links">
         <Link to="/">INICIO</Link>
-        <a href="#diputados">DIPUTADOS</a>
+        <a to="/" href="#diputados">DIPUTADOS</a>
         <Link to="https://api.whatsapp.com/send?phone=5215586666977&text=hola" target="_blank">CONECTA YA!</Link>
       </div>
       <div className={menu ? "menu" : "hamburger"} onClick={handleActive}>

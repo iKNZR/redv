@@ -13,11 +13,21 @@ const Diputados = () => {
   const outHover = (i) => {
     setHoverStatus({ ...hoverStatus, [i]: false });
   };
+  // const fetchData = async () => {
+  //   try {
+  //     const response = await fetch(
+  //       "https://vercesheetstest-goj7o2r0b-iknzrs-projects.vercel.app/data"
+  //     );
+  //     const data = await response.json();
+  //     setData(data);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
   const fetchData = async () => {
     try {
-      const response = await fetch(
-        "https://vercesheetstest-goj7o2r0b-iknzrs-projects.vercel.app/data"
-      );
+      const response = await fetch('/data/data.json');
       const data = await response.json();
       setData(data);
     } catch (error) {
@@ -32,7 +42,7 @@ const Diputados = () => {
   return (
     <div className="diputados" id="diputados">
       <h1>CONOCE A TUS DIPUTADOS</h1>
-      <div className="diputados-container">
+      {/* <div className="diputados-container">
         {data ?
           data.map((row, _) => (
             <div
@@ -46,6 +56,28 @@ const Diputados = () => {
               <div className={hoverStatus[row[0]] ? "desc" : "descn"}>
                 <p>{row[2]}</p>
                 <Link to={`/diputados/${row[0]}`}  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                  <button className="contactame">Conóceme</button>
+                </Link>
+              </div>
+            </div>
+          )):
+          <p>Cargando...</p>
+          }
+      </div> */}
+      <div className="diputados-container">
+        {data ?
+          data.map((row, _) => (
+            <div
+              key={row.id}
+              className="card"
+              style={{ animationDelay: `${row.id * 0.3}s` }}
+              onMouseEnter={() => enterHover(row.id)}
+              onMouseLeave={() => outHover(row.id)}
+            >
+              <img src={row.foto} alt={`Diputado ${row.foto}`} />
+              <div className={hoverStatus[row.id] ? "desc" : "descn"}>
+                <p>{row.nombre}</p>
+                <Link to={`/diputados/${row.id}`}  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   <button className="contactame">Conóceme</button>
                 </Link>
               </div>
