@@ -7,7 +7,7 @@ const Qr = () => {
   return (
     <div className="codqr">
       <Link
-        to="https://api.whatsapp.com/send?phone=5215586666977&text=hola"
+        to="https://api.whatsapp.com/send?phone=5215639534196&text=hola"
         target="_blank"
       >
         <img src={qr} alt="Código QR" />
