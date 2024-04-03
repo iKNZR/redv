@@ -30,7 +30,7 @@ const Diputados = () => {
 
   return (
     <div className="diputados" id="diputados">
-      <h1>CONOCE A TUS DIPUTADOS</h1>
+      <h1>CONOCE A TUS DIPUTADOS FEDERALES</h1>
       <div className="diputados-container">
         {data ?
           data.map((row, _) => (
