@@ -17,7 +17,7 @@ const NavBar = () => {
       <div className="nav-links">
         <Link to="/">INICIO</Link>
         <a to="/" href="#diputados">DIPUTADOS</a>
-        <Link to="https://api.whatsapp.com/send?phone=5215586666977&text=hola" target="_blank">CONTÁCTANOS</Link>
+        <Link to="https://api.whatsapp.com/send?phone=5215639534196&text=hola" target="_blank">CONTÁCTANOS</Link>
       </div>
       <div className={menu ? "menu" : "hamburger"} onClick={handleActive}>
         <span className="bar"></span>
@@ -28,7 +28,7 @@ const NavBar = () => {
         <div className="hamb-links">
           <Link to="/"  onClick={handleActive}>INICIO</Link>
           <a href="#diputados" onClick={handleActive}>DIPUTADOS</a>
-          <Link to="https://api.whatsapp.com/send?phone=5215586666977&text=hola" target="_blank"  onClick={handleActive}>CONTÁCTANOS</Link>
+          <Link to="https://api.whatsapp.com/send?phone=5215639534196&text=hola" target="_blank"  onClick={handleActive}>CONTÁCTANOS</Link>
         </div>
       ) : <></>}
     </div>
