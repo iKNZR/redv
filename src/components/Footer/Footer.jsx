@@ -7,9 +7,9 @@ import logo from "/assets/Logo.png";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="left-sect">
+{/*       <div className="left-sect">
         <img src={qr_footer} alt="QR Footer" />
-      </div>
+      </div> */}
       <div className="right-sect">
         <h2>NOSOTROS</h2>
         <div className="foot-nav">
