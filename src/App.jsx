@@ -5,7 +5,7 @@ import NavBar from './components/Nav/NavBar'
 import HomePage from './pages/Home/HomePage'
 import Footer from './components/Footer/Footer'
 import DiputadoPage from './pages/DiputadoPage/DiputadoPage'
-
+import FormPage from './pages/FormPage/FormPage'
 function App() {
 
   return (
@@ -15,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/diputados/:id" element={<DiputadoPage />} />
+        <Route path="/form" element={<FormPage />} />
       </Routes>
       <Footer />
       </BrowserRouter>
