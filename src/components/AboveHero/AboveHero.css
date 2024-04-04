@@ -77,6 +77,15 @@
     }  
 }
 
+@media (max-width: 393px){
+    .images img:nth-child(1){
+        width: 22rem;    
+    }
+    .images img:nth-child(2){
+        width: 17rem;    
+    }  
+}
+
 @media (max-width: 375px) {
     .images img:nth-child(1){
         width: 20rem;    
